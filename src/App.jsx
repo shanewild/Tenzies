@@ -72,7 +72,7 @@ export default function App() {
         current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
-      <button className="roll-dice" onClick={reRoll}>{gameWon ? 'New Game' : 'Roll!'}
+      <button ref={buttonRef} className="roll-dice" onClick={reRoll}>{gameWon ? 'New Game' : 'Roll!'}
       </button>
     </main>
   );
